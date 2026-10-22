@@ -1,0 +1,2 @@
+{"name":"fitlog-local","version":"1.0.0","private":true,"description":"A local-first personal nutrition and meal log","scripts":{"start":"node server.js"},"engines":{"node":">=18"}}
+
