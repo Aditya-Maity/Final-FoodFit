@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: final-foodfit
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    autoDeployTrigger: commit
+    envVars:
+      - key: FITLOG_USERNAME
+        value: aditya maity
+      - key: FITLOG_PASSWORD
+        sync: false
+      - key: FITLOG_PASSWORD_SALT
+        generateValue: true
+      - key: FITLOG_GITHUB_REPO
+        value: Aditya-Maity/Final-FoodFit
+      - key: FITLOG_GITHUB_BRANCH
+        value: main
+      - key: FITLOG_GITHUB_TOKEN
+        sync: false
